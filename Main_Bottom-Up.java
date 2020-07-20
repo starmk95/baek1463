@@ -13,6 +13,7 @@ public class Main{
     }
 
     public static int makeOne(int num) {
+        // Bottom-Up 방식
         // D[n] : n을 1로 만들기 위해 사용되는 연산의 횟수
         // 점화식 : D[n] = min(D[n/3], D[n/2], D[n-1]) + 1
         for (int i=2;i<num+1;i++) {
